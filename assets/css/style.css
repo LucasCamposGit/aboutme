@@ -11,6 +11,8 @@
     color: #000;
 }
 
+
+
 header {
     background-color: #eee;
     display: flex;
@@ -92,6 +94,43 @@ footer {
     justify-content: center;
     background-color: #ccc;
     height: 10vh;
+}
+
+@media screen and (max-width: 955px) {
+    header{
+        padding: 30px;
+    }
+    
+    main {
+        grid-template-areas:
+          "picture p"
+          "picture icons";
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        row-gap: 2vw;
+        justify-items: center;
+      }
+    
+    main .picture{
+        width: 20vw;
+    }
+
+    .icons{
+        padding: 2vw 0;
+    }
+
+    .icons img{
+        width: 4vw;
+    }
+
+    .icons a{
+        border-radius: 1vw;
+    }
+
+    .icons a:focus{
+        background-color: #ccc;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
