@@ -93,3 +93,43 @@ footer {
     background-color: #ccc;
     height: 10vh;
 }
+
+@media screen and (max-width: 500px) {
+    main {
+      grid-template-areas:
+        "picture"
+        "p"
+        "icons";
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      row-gap: 2vw;
+      height: auto;
+      justify-items: center;
+    }
+
+    main .picture{
+        width: 45vw;
+    }
+
+    main p {
+      order: 2; /* Define a ordem que o elemento aparece no layout */
+      width: auto;
+    }
+  
+    .icons {
+      order: 1;
+      padding: 2vw 0;
+    }
+
+    .icons img{
+        width: 8vw;
+    }
+
+    .icons a{
+        border-radius: 1vw;
+    }
+
+    .icons a:focus{
+        background-color: #ccc;
+    }
+  }
