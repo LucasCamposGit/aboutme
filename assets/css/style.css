@@ -1,0 +1,95 @@
+@import "../font/Ysabeau_SC/YsabeauSC-VariableFont_wght.ttf";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 1.vw;
+    color: #000;
+}
+
+header {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    height: 7vh;
+}
+
+header ul {
+    display: flex;
+    gap: 2vw;
+}
+
+header ul li a {
+    width: 5vw;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: 
+    "picture p"
+    "picture icons";
+    column-gap: 5vw;
+    grid-template-rows: 30vw 5vw;
+    height: 83vh;
+    padding:  0 5vw;
+}
+
+main p {
+    grid-area: p;
+    width: 40vw;
+}
+
+main .picture {
+    grid-area: picture;
+    width: 15vw;
+    border-radius: 5vw;
+}
+
+main .icons {
+    grid-area: icons;
+    display: flex;
+    gap: 7vw;
+
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+.icons img {
+    width: 3vw;
+}
+
+.icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw 1vw;
+    border-radius: 0.2vw;
+    gap: 0.2vw;
+}
+
+.icons a:hover{
+    background-color: #ccc;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    height: 10vh;
+}
